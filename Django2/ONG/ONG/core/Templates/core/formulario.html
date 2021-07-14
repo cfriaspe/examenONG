@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css'%}">
+    <link rel="preconnect" href="{% static 'core/https://fonts.gstatic.com'%}">
+    <link rel="stylesheet" href="{% static 'core//css/normalize.css'%}">
+    <link rel="preload" href="{% static 'core/css/style.css'%}" as="style">
+    <link href="{% static 'core/css/style.css'%}" rel="stylesheet">
+    <link href="{% static 'core/css/clima.css'%}" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body>
+<!--esta parte es el encabezado de la pagina-->
+<div class="container">
+        <header class="row justify-content-center">
+            <div class="col-12 col-md-auto">
+                <h1 class="titulo">ONG Ayuda a un Peludo</h1> 
+                <p class="h3 titulosec text-capitalize">Te ayudamos y Te orientamos para una adopcion con tenencia Responsable</p>
+            </div>
+                
+                    <!--esta division es el menu de la pagina-->
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                            Menu
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/gatos">Gatos</a>
+                            <a class="dropdown-item" href="/perros">Perros</a>
+                            <a class="dropdown-item" href="/nosotros">Nosotros</a>
+                            <a class="dropdown-item" href="/formulario">Contactanos</a>
+                            <a class="dropdown-item" href="/proveedor">Proveedor</a>
+                            <a class="dropdown-item" href="/registroproveedor">Registro Proveedor</a>
+                            <a class="dropdown-item" href="/index">Inicio</a>
+                    </div>
+        </header>
+        <!--linea de inicio de sesion usuario        
+        <div class="container">
+            <div class="row justify-content-center mb-3">
+                <div class="col-12 col-md-6">
+                    <form action="#" class="form-control" role="form" method="POST" >
+                        <fieldset>
+                            <legend>Inicio de Sesion</legend>
+                            <hr>
+                            <div class="form-check form-check-inline usuarioAutenticado">
+                                <label class="form-check-label">
+                                <p class="h6 mb-2"><em>seleccione preferencia de inicio</em></p>
+                                <input type="radio" name="rut" value="rut">Rut
+                                </label>
+                            </div>
+                            <div    class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" name="rut" value="rut">Pasaporte
+                                </label>
+                            </div> 
+                                <form action="#" class="form-inline" class="formulario">
+                                    <input type="text" class="form-control form-control-sm mb-4" id="usuario" placeholder="Ingrese su Usuario sin puntos ni guion">
+                                        <input type="password" class="form-control form-control-sm mb-4" id="password" placeholder="Ingrese su Contraseña">
+                                            <div class="form-check mr-3">
+                                                <input type="checkbox" name="Recordar" id="recordar" class="form-check-input">
+                                                <label for="recordar" class="form-check-label"> Recordar este Usuario</label>
+                                            </div>
+                                            <input type="submit" value="Inicio Sesion" class="btn btn-primary mt-5 boton">
+                                </form>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>-->
+        <!--linea Formulario de Contacto--> 
+        <div class="container">
+            <div class="row">
+               <fieldset class="formulario">
+                   <legend>Formulario de Contacto</legend>
+                    <form action="#" enctype="application/x-www-form-urlencoded"  name="contacto" method="#" >
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control form-control-sm mb-4" placeholder="Nombre" name="nombre" id="nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="Apellido">Apellido</label>
+                            <input type="text" class="form-control form-control-sm mb-4" placeholder="apellido" name="apellido" id="apellido">
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="Telefono">Telefono</label>
+                            <input type="text" class="form-control form-control-sm mb-4" placeholder="Ingrese un Numero de Contacto" name="telefono" id="telefono">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="Mail">mail</label>
+                            <input type="text" class="form-control form-control-sm mb-4" placeholder="mail" name="mail" id="mail">
+                        </div>
+        
+                        <div class="form-goup">
+                            <label for="Region">Region de Residencia</label>
+                            <select name="Region" id="Region" class="custom-select form-control form-control-sm mb-4 ">
+                                <option value="I Tarapaca">I Region de Tarapaca</option>
+                                <option value="II Región de Antofagasta">II Región de Antofagasta</option>
+                                <option value="III Región de Atacama">III Región de Atacama</option>
+                                <option value="IV Región de Coquimbo">IV Región de Coquimbo</option>
+                                <option value="V Región de Valparaíso">V Región de Valparaíso</option>
+                                <option value="VI Región del Libertador General Bernardo O’Higgins">VI Región del Libertador General Bernardo O’Higgins</option>
+                                <option value="VII Región del Maule">VII Región del Maule</option>
+                                <option value="VIII Región del Biobío">VIII Región del Biobío</option>
+                                <option value="IX Región de La Araucanía">IX Región de La Araucanía</option>
+                                <option value="X Región de Los Lagos">X Región de Los Lagos</option>
+                                <option value="XI Región Aysén del General Carlos Ibáñez del Campo">XI Región Aysén del General Carlos Ibáñez del Campo</option>
+                                <option value="XII Región de Magallanes y Antártica Chilena">XII Región de Magallanes y Antártica Chilena</option>
+                                <option value="Región Metropolitana de Santiago" selected>Región Metropolitana de Santiago</option>
+                                <option value="XIV Región de Los Ríos">XIV Región de Los Ríos</option>
+                                <option value="XV Región de Arica y Parinacota">XV Región de Arica y Parinacota</option>
+                                <option value="XVI Región de Ñuble">XVI Región de Ñuble</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" class="form-control form-control-sm mb-4"></textarea>
+                        </div>
+                        <input type="submit" value="Enviar" class="btn btn-primary mt-5" id="enviar">
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+</div>
+<footer class="lead"> <em> Design By Frias & Lopez </em></footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="js/validaformulario.js"></script>
+</body>   
+</html> 

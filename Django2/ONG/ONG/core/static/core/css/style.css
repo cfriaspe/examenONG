@@ -1,0 +1,118 @@
+body{
+    background-color:#1f80b1;
+    
+}
+.row{
+    background-color:#085a70a2 ;
+    padding: 50px;
+    margin-bottom: 30px;
+    color:white;
+}
+.titulo{
+    color:rosybrown;
+    text-align: center;
+}
+
+.titulosec{
+    color:rosybrown;
+    text-align: center;
+    
+}
+.columna{
+    padding: 10px;
+    margin-left: 20px;
+}
+.parrafo{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px;
+    margin-bottom: 1px;
+    color:#f8ecc8;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.h4{
+    color:#222a2e;
+    margin-bottom: 20px;
+    font-size:32px ;
+    color: rosybrown;
+}
+
+.h6{
+    margin-bottom:1px;
+    text-align: center;
+}
+ .imagen:hover{
+     background-color: lightblue;
+ }
+ .card-body{
+     color: grey;
+ }
+
+ .p{
+     background-color:black;
+     margin-bottom:40px;
+ }
+ .pop-up{
+     color: black;
+ }
+
+ .marginbotton{
+     margin-right: 50px;
+ }
+
+ .bordesolido{
+     border-style: solid;
+     border-color: red;
+     border-width: 1px;
+ }
+
+ /*clases creadas en js*/
+ .correcto {
+     background-color: #000f1e66;
+     color: white;
+     padding: 2px;
+     margin-top: 4px;
+     text-align: center;
+ }
+ .error {
+    background-color: #da291c;
+    color: white;
+    padding: 2px;
+    margin-top: 4px;
+    text-align: center;
+}
+
+.sesionon{
+    background-color: #000f1e66;
+    color: white;
+    padding: 2px;
+    margin-top: 4px;
+    text-align: center;
+}
+
+.sesionoff{
+    background-color: #001c39;
+    color: white;
+    padding: 2px;
+    margin-top: 4px;
+    text-align: center;
+
+}
+
+.margen{
+    margin-top: 150px;
+}
+
+/*imagen se debe trabajar para colar de fondo actualmente no funcional*/
+.imagen{
+    background-image: url(../IMG/perrosygatos.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pr{
+    background-color: red;
+}
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css'%}">
+        <link rel="preconnect" href="{% static 'core/https://fonts.gstatic.com'%}">
+        <link rel="stylesheet" href="{% static 'core//css/normalize.css'%}">
+        <link rel="preload" href="{% static 'core/css/style.css'%}" as="style">
+        <link href="{% static 'core/css/style.css'%}" rel="stylesheet">
+        <link href="{% static 'core/css/clima.css'%}" rel="stylesheet">
+        <title>Gatos ONG</title>
+        
+    </head>
+<body>
+    <div class="container">
+        <header class="row justify-content-center">
+            <div class="col-sm-10">
+                <h1 class="titulo">
+                    ONG Ayuda a un Peludo
+                </h1> 
+                <p class="h3 titulosec text-capitalize">
+                    Te ayudamos y Te orientamos para una adopcion con tenencia Responsable
+                </p>
+            </div>
+        
+            <!--esta division es el menu de la pagina-->
+                <div class="dropdown">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                        Menu
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/gatos">Gatos</a>
+                        <a class="dropdown-item" href="/perros">Perros</a>
+                        <a class="dropdown-item" href="/nosotros">Nosotros</a>
+                        <a class="dropdown-item" href="/formulario">Contactanos</a>
+                        <a class="dropdown-item" href="/proveedor">Proveedor</a>
+                        <a class="dropdown-item" href="/registroproveedor">Registro Proveedor</a>
+                        <a class="dropdown-item" href="/index">Inicio</a>
+                </div>
+                <p class="h6">
+                    Hola! Bienvenido a la seccion de gatitos. Aqui podrás conocer a nuestros amigos
+                    que estan en espera de una nueva familia
+                </p>
+        </header>
+    </div>
+       
+    </div>  
+</section>
+<!--esta seccion abarca los gatos y una mini descripcion de ellos-->
+
+            <!--Gato01-->
+<main class="container-fluid margen">
+    <div class="row justify-content-between">
+        <div class="col-sm-auto d-flex">
+            <div class="media-body">
+                <img class="img-fluid rounded" src="{% static 'core/IMG/adoptagato01.jpg '%}" height="300" width="300" alt="cacharros en adopcion">
+                    <ul>
+                        <li>Nombre: Paula</li>
+                        <li>Sexo: Hembra</li>
+                        <li>Edad: 6 Meses</li>
+                        <li>Caracteristicas: Esterilizada y con Chip</li>
+                        <li>En adopcion cumplido los 7 meses</li>
+                    </ul>
+            </div>
+        </div>
+                <!--gato02-->
+        <div class="col-sm-auto d-flex">        
+            <div class="media-body">
+                <img class="img-fluid rounded" src="{% static 'core/IMG/adoptagato06.jpg '%}"   height="300" width="300" alt="cacharros en adopcion">
+                    <ul>
+                        <li>Nombre: Doremy</li>
+                        <li>Sexo: Hembra</li>
+                        <li>Edad: 1 Año</li>
+                        <li>Caracteristicas:Esterilizada y con Chip</li>
+                    </ul>
+            </div>
+        </div>
+            <!--gato03-->
+        <div class="col-sm-auto d-flex">
+            <div class="media-body">
+                <img class="img-fluid rounded" src="{% static 'core/IMG/adoptagato05.jpg '%}"  height="300" width="300" alt="cacharros en adopcion">
+                    <ul>
+                        <li>Nombre:Leny</li>
+                        <li>Sexo: Macho </li>
+                        <li>Edad: 1 Año</li>
+                        <li>Caracteristicas: Amigable con los niños</li>
+                    </ul>
+            </div>
+        </div>
+           <!--gato04-->
+        <div class="col-sm-auto d-flex">
+            <div class="media-body">
+                <img class="img-fluid rounded" src="{% static 'core/IMG/adoptagato04.jpg '%}"  height="300" width="300" alt="cacharros en adopcion">
+                    <ul>
+                        <li>Nombre: Tomate</li>
+                        <li>Sexo: Macho</li>
+                        <li>Edad: 1 Año</li>
+                        <li>Caracteristicas: Esterilizado y con Chip</li>
+                    </ul>
+            </div>
+        </div>
+           <!--gato05-->
+           <div class="col-sm-auto d-flex">
+            <div class="media-body">
+                <img class="img-fluid rounded" src="{% static 'core/IMG/adoptagato03.jpg '%}"  height="300" width="300" alt="cacharros en adopcion">
+                    <ul>
+                        <li>Nombre: kratos</li>
+                        <li>Sexo: Macho</li>
+                        <li>Edad: 1 Año</li>
+                        <li>Caracteristicas: Esterilizado y con Chip</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="lead"> <em> Design By Frias & Lopez </em></footer>
+
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="js/gato02.js"></script>
+</body>
+</html>
