@@ -5,7 +5,7 @@ const datos = {
     apellido:'',
     telefono:'',
     mail:'',
-    Region:'',
+    region:'',
     mensaje:''
 }
 
@@ -17,7 +17,7 @@ const nombre = document.querySelector('#nombre');
 const apellido = document.querySelector('#apellido');
 const telefono = document.querySelector('#telefono');
 const mail = document.querySelector('#mail');
-const Region = document.querySelector('#Region');
+const region = document.querySelector('#region');
 const mensaje = document.querySelector('#mensaje');
 
 
@@ -25,7 +25,7 @@ nombre.addEventListener     ('input',validaTexto);
 apellido.addEventListener   ('input',validaTexto);
 telefono.addEventListener   ('input',validaTexto);
 mail.addEventListener       ('input',validaTexto);
-Region.addEventListener     ('input',validaTexto);
+region.addEventListener     ('input',validaTexto);
 mensaje.addEventListener    ('input',validaTexto);
    
 
@@ -37,8 +37,8 @@ formulario.addEventListener ('submit',function(evento) {
 
     //valdia el formulario
 
-     const { nombre , appellido,telefono,mail,region,mensaje} = datos;
-         if (nombre ==='' ||apellido === '' || telefono === '' || mail ==='' ||Region === '' || mensaje === ''){
+     const { nombre , apellido,telefono,mail,region,mensaje} = datos;
+         if (nombre ==='' ||apellido === '' || telefono === '' || mail ==='' ||region === '' || mensaje === ''){
              mostrarError('Todos los campos son obligatorios');
              
              return; // corta la linea de ejecucion del codigo
@@ -60,9 +60,9 @@ function validaTexto (evento){
 
 //muestra mensaje de envio correcto
 
-function mostrarMensaje(mensaje){
+function mostrarMensaje(texto){
     const alerta = document.createElement('P');
-    alerta.textContent = mensaje;
+    alerta.textContent = texto;
     alerta.classList.add ('correcto');
     formulario.appendChild(alerta);
 
@@ -75,9 +75,9 @@ setTimeout(()=>{
 
 // muestra el error en pantalla
 
-function mostrarError(mensaje){
+function mostrarError(texto){
     const error =document.createElement('P');
-    error.textContent= mensaje;
+    error.textContent= texto;
     error.classList.add ('error');
 
   formulario.appendChild(error);

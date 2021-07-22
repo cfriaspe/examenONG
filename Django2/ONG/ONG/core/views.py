@@ -51,7 +51,7 @@ def modificar_proveedor(request, rut):
         modificarProveedor = ProveedorFormulario(data=request.POST, instance=proveedor)
         if modificarProveedor.is_valid():
            modificarProveedor.save()
-           return redirect(to="Listado-proveedor")
+           return redirect(to="listado-proveedor")
         datos["form"] = modificarProveedor
     return render(request, 'core/modificar.html', datos)
 
@@ -59,7 +59,7 @@ def eliminar_proveedor(request, rut):
 
     proveedor = get_object_or_404(Proveedor, rut=rut)
     proveedor.delete()
-    return redirect(to="Listado-proveedor")
+    return redirect(to="listado-proveedor")
 
 
 

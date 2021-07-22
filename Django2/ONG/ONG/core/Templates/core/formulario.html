@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="{% static 'core//css/normalize.css'%}">
     <link rel="preload" href="{% static 'core/css/style.css'%}" as="style">
     <link href="{% static 'core/css/style.css'%}" rel="stylesheet">
-    <link href="{% static 'core/css/clima.css'%}" rel="stylesheet">
     <title>Formulario</title>
 </head>
 <body>
@@ -78,7 +77,7 @@
                     <form action="#" enctype="application/x-www-form-urlencoded"  name="contacto" method="#" >
                         <div class="form-group">
                             <label for="nombre">Nombre</label>
-                            <input type="text" class="form-control form-control-sm mb-4" placeholder="Nombre" name="nombre" id="nombre">
+                            <input type="text" class="form-control form-control-sm mb-4" placeholder="nombre" name="nombre" id="nombre">
                         </div>
                         <div class="form-group">
                             <label for="Apellido">Apellido</label>
@@ -87,17 +86,17 @@
             
                         <div class="form-group">
                             <label for="Telefono">Telefono</label>
-                            <input type="text" class="form-control form-control-sm mb-4" placeholder="Ingrese un Numero de Contacto" name="telefono" id="telefono">
+                            <input type="text" class="form-control form-control-sm mb-4" placeholder="ingrese un Numero de Contacto" name="telefono" id="telefono">
                         </div>
         
                         <div class="form-group">
-                            <label for="Mail">mail</label>
+                            <label for="mail">Mail</label>
                             <input type="text" class="form-control form-control-sm mb-4" placeholder="mail" name="mail" id="mail">
                         </div>
         
                         <div class="form-goup">
-                            <label for="Region">Region de Residencia</label>
-                            <select name="Region" id="Region" class="custom-select form-control form-control-sm mb-4 ">
+                            <label for="region">Region de Residencia</label>
+                            <select name="region" id="region" class="custom-select form-control form-control-sm mb-4 ">
                                 <option value="I Tarapaca">I Region de Tarapaca</option>
                                 <option value="II Región de Antofagasta">II Región de Antofagasta</option>
                                 <option value="III Región de Atacama">III Región de Atacama</option>
@@ -117,16 +116,26 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="Mensaje">Mensaje</label>
+                            <label for="mensaje">Mensaje</label>
                             <textarea name="mensaje" id="mensaje" class="form-control form-control-sm mb-4"></textarea>
                         </div>
-                        <input type="submit" value="Enviar" class="btn btn-primary mt-5" id="enviar">
+                        <input type="submit" value="Enviar" class="btn btn-danger mt-5" id="enviar">
                     </form>
                 </fieldset>
             </div>
         </div>
 </div>
-<footer class="lead"> <em> Design By Frias & Lopez </em></footer>
+
+<footer class="lead bg-dark text-center text-white">
+    <div class="text-center p-3" style="background-color: black;">© 2021 Copyright:
+        <a class="text-white" href="#"><strong> Design By Frias & Lopez</strong></a>
+    </div>
+</footer>
+
+
+
+
+<script src="../../static/core/js/bootstrap.bundle.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
